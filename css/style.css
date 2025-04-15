@@ -593,3 +593,47 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
+@media (max-width: 768px) {
+    .hero-content {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .hero-text {
+      flex: 1 1 60%;
+      padding-right: 15px;
+    }
+  
+    .profile-image {
+      flex: 1 1 40%;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .profile-image img {
+      max-width: 180px;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-text {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  
+    .profile-image {
+      flex: 1 1 100%;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+  
+    .hero-content {
+      flex-direction: column-reverse;
+    }
+  }
